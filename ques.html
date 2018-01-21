@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页标题</title>
+		<style>
+		/*公共样式*/
+			body,ul,li,h1 { padding:0; margin:0; font-family:"微软雅黑"; list-style:none; }
+			a { text-decoration:none; font-size:12px; color:black; }
+			div { padding:0; margin:0; text-align:center; }
+			img,a,p { padding:0; margin:0; }
+			/*logo*/
+			#logo { width:350px; height:130px; background:url('images/r.png') no-repeat; background-size:350px 130px; position:absolute; z-index:9; }
+			#logo a { position:absolute; top:0; left:10px;  }
+			#logo img { width:120px; height:60px;  }
+			/* 导航条 */
+			nav { background:#ff0; box-shadow:0 2px 5px 5px #bab218; position:relative; z-index:4; }
+			nav>div { width:600px; padding-top:10px; float:right; }
+			nav .u1 span { margin-right:10px; font-size:12px; }
+			nav .u2 li { float:left; margin-top:20px; }
+			nav .u2 li a,nav .go div a { display:block; width:100px; height:40px; text-align:center; line-height:40px; }
+			nav .u2 li:hover a { background:#333; color:#fff; }
+			nav .go { position:relative; }
+			nav .go div { display:none; position:absolute; top:40px; }
+			nav .u2 li.go:hover div { display:block; }
+			nav .go div a:hover { background:#000; } 
+			.tp { display:block; width:100%; height:263px; background:url("images/mjmg.jpg") no-repeat; background-size: 100% 776px; position:absolute; z-index:1; }
+			/*灰色*/
+			.shs { width:100%; height:145px; background:#cccccc; position:absolute; z-index:9; margin-top:450px; }
+			.jc { font-weight:bold; font-size:12px; margin-left:8%; float:left; margin-top:30px; }
+			.jj { margin-top:10px; float:left; margin-left:8%; }
+			.jj>a { display:block; }
+			.dh { font-size:18px; }
+			.hs1 { font-size:12px; color:#7e8083; }
+			.yb { float:right; margin-right:38%; margin-top:-34px; }
+			.yb>a { display:inline-block; }
+			#wx { width:25px; height:22px; background:url("images/weixin.jpg") no-repeat; background-size:25px 22px;  }
+			#wb { width:25px; height:22px; background:url("images/weibo.jpg") no-repeat; background-size:22px 19px;  }
+			/*底部黑色*/
+			.dbhs { width:100%; height:60px; background:#2c2c2c; font-size:12px;position:absolute; z-index:9; margin-top:595px;  }
+			.hs2 { color:#7e8083; text-align:center; }
+			.hsz { color:#fefe00; }
+		</style>
+	</head>
+	<body>
+		<span class="tp"></span>
+		<div id='logo'>
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		<nav>
+			<div>
+				<div class="u1">
+					<span> 福建省厦门市思明区大学路 </span>
+					<span> Email:88988999@qq.com	</span>
+					<span> 4009677660 </span>
+				</div>
+				<ul class="u2">
+					<li><a href="href">网站首页</a></li>
+					<li class='go'>
+						<a href="#">品牌故事</a>
+						<div>
+							<a href="#">公司简介</a>
+							<a href="#">在线留言</a>
+						</div>
+					</li>
+					<li><a href="#">产品展示</a></li>
+					<li><a href="#">新闻资讯</a></li>
+					<li><a href="#">招纳贤士</a></li>
+					<li><a href="#">联系我们</a></li>
+					<table style='clear:both;'></table>
+				</ul>
+			</div>
+			<table style='clear:both;'></table>
+		</nav>
+		<div class="shs">
+			<div>
+				<a href="#" class="jc">品牌故事</a>
+				<a href="#" class="jc">产品展示</a>
+				<a href="#" class="jc">新闻资讯</a>
+				<a href="#" class="jc">招贤纳士</a>
+			</div>
+			<table style='clear:both;'></table>
+			<div class="jj">
+				<a href="#">公司简介</a>
+				<a href="#">在线留言</a>
+			</div>
+			<table style='clear:both;'></table>
+			<div class="yb">
+				<p class="dh">400-967-7660</p>
+				<p class="hs1">周一至周五 10:30~23:30</p>
+				<a href="#" id="wx"></a>
+				<a href="#" id="wb"></a>
+			</div>
+			<table style='clear:both;'></table>
+		</div>
+		<div class="dbhs">
+			<p class="hs2">361000</p>
+			<p class="hsz">本网站为芒果很黄官方网站，本公司未在任何网站发布招商加盟信息，商务合作请联系市场部张总</p>
+		</div>
+</html>

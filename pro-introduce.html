@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页标题</title>
+		<style>
+			/*公共样式*/
+			body,ul,li,h1 { padding:0; margin:0; font-family:"微软雅黑"; list-style:none; }
+			a { text-decoration:none; font-size:12px; color:black; }
+			div { padding:0; margin:0; text-align:center; }
+			img,a,p { padding:0; margin:0; }
+			/*logo*/
+			#logo { width:350px; height:130px; background:url('images/r.png') no-repeat; background-size:350px 130px; position:absolute; z-index:9; }
+			#logo a { position:absolute; top:0; left:10px;  }
+			#logo img { width:120px; height:60px;  }
+			/* 导航条 */
+			nav { background:#ff0; box-shadow:0 2px 5px 5px #bab218; position:relative; z-index:4; }
+			nav>div { width:600px; padding-top:10px; float:right; }
+			nav .u1 span { margin-right:10px; font-size:12px; }
+			nav .u2 li { float:left; margin-top:20px; }
+			nav .u2 li a,nav .go div a { display:block; width:100px; height:40px; text-align:center; line-height:40px; }
+			nav .u2 li:hover a { background:#333; color:#fff; }
+			nav .go { position:relative; }
+			nav .go div { display:none; position:absolute; top:40px; }
+			nav .u2 li.go:hover div { display:block; }
+			nav .go div a:hover { background:#000; } 
+			.tp { display:block; width:100%; height:263px; background:url("images/mjmg.jpg") no-repeat; background-size: 100% 776px; position:absolute; z-index:1; }
+			/* 公司简介 */
+			.gsjj { width:100%; height:55px; margin-top:220px; border-bottom:1px solid #f0f2f5; margin-bottom:60px; position:absolute; z-index:6; }
+			.gsjj>a { font-size:16px; margin-right:2%; }
+			#ly { color:#93939b; }
+			.hsk { margin:0 auto; width:85%; height:1320px; border:1px solid #f0f2f5; margin-top:320px; }
+			.d1h { background:#f3f7f9; }
+			.hsk>div { width:100%; height:330px; border-bottom:1px solid #f0f2f5; 
+			.zuo { border-right:1px solid #f0f2f5; float:left; width:49%; height:330px; }
+			.you { border-right:1px solid #f0f2f5; float:left; width:49%; height:330px; }
+			.d { font-weight:bold; font-size:18px; }
+			.tu {display:block; background:url("images/t.jpg") no-repeat;    background-size:540px 310px; width:540px; height:310px; }
+		</style>
+	</head>
+	<body>
+		<span class="tp"></span>
+		<div id='logo'>
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		<nav>
+			<div>
+				<div class="u1">
+					<span> 福建省厦门市思明区大学路 </span>
+					<span> Email:88988999@qq.com	</span>
+					<span> 4009677660 </span>
+				</div>
+				<ul class="u2">
+					<li><a href="href">网站首页</a></li>
+					<li class='go'>
+						<a href="#">品牌故事</a>
+						<div>
+							<a href="#">公司简介</a>
+							<a href="#">在线留言</a>
+						</div>
+					</li>
+					<li><a href="#">产品展示</a></li>
+					<li><a href="#">新闻资讯</a></li>
+					<li><a href="#">招纳贤士</a></li>
+					<li><a href="#">联系我们</a></li>
+					<table style='clear:both;'></table>
+				</ul>
+			</div>
+			<table style='clear:both;'></table>
+		</nav>
+		<div class="gsjj">
+			<a href="pro-introduce.html">公司简介</a>
+			<a href="online.html" id="ly">在线留言</a>
+		</div>
+	</body>
+	<div class="hsk">
+		<div class="d1h">
+			<div class="zuo"><span class="tu"></span></div>
+			<div class="you">
+				<p class="d">品牌简介</p>
+				<p>芒果很黄是一个高度集合芒果系列产品的创意甜品品牌。品牌初衷来源于对芒果的单纯热爱，对生活的不断追求。精选高品质特级芒果，提倡用个性鲜明的产品和风趣的品牌文化，为消费者营造一个聚餐的约会、消遣放松的舒适空间。目前品牌拥有20余家门店，其坚持芒果系、认真做产品、大胆率真的品牌个性，得到城市年轻消费群体的喜爱和认可。</p>
+			</div>
+			<table style='clear:both;'></table>
+		</div>
+	</div>
+</html>
